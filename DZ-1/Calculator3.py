@@ -5,10 +5,12 @@ def abc(a1, b1, c1):
         print(a1 - b1)
     elif c1 == '*':
         print(a1 * b1)
-    elif c1 == '/':
+    elif c1 == '/' and b1 != 0:
         print(a1 / b1)
-    elif c1 == '//':
+    elif c1 == '//' and b1 != 0:
         print(a1 // b1)
+    elif c1 == '%' and b1 != 0:
+        print(a1 % b1)
     elif c1 == '**':
         print(a1 ** b1)
     else:

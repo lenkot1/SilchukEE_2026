@@ -9,13 +9,21 @@ def umnoj(a,b):
     print(a*b)
 def delit(a,b):
     print(a/b)
+def delitnacelo(a,b):
+    print(a//b)
+def ostatok(a,b):
+    print(a%b)
 if c == '+':
-    plus(a,b)
+    plus(a, b)
 elif c == '-':
-    minus(a,b)
+    minus(a, b)
 elif c == '*':
-    umnoj(a,b)
-elif c == '/':
-    delit(a,b)
+    umnoj(a ,b)
+elif c == '/' and b != 0:
+    delit(a, b)
+elif c == '//' and b != 0:
+    delitnacelo(a, b)
+elif c == '%' and b != 0:
+    ostatok(a, b)
 else:
     print('Ошибка')
